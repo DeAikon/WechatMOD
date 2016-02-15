@@ -129,7 +129,7 @@ public class ObfuscationHelper {
             Bottle = findClass(MM_MODEL_PACKAGENAME +
                     new String[]{"x", "x", "i", "i", "i","j"}[idx], lpparam.classLoader);
             WTFClazz = findClass("com.tencent.mm.pluginsdk." +
-                    new String[]{"l$ag", "l$ag", "h$ah", "h$ah"}[idx], lpparam.classLoader);
+                    new String[]{"l$ag", "l$ag", "h$ah", "h$ah","i$ai"}[idx], lpparam.classLoader);
             PluginToolClazz = findClass("com.tencent.mm." +
                     new String[]{"aj.c", "aj.c", "am.c", "am.c", "an.c","ao.c"}[idx], lpparam.classLoader);
 //            MainAddContactFragment = findClass(mainAddContactFragment, lpparam.classLoader);
