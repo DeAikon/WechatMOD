@@ -80,7 +80,9 @@ public class ObfuscationHelper {
             return 4;
         } else if (versionName.contains("6.2.5.52")) {
             return 4;
-        } else {
+        } else if (versionName.contains("6.3.13.49")){
+            return 5;
+        }else {
             return -1;
         }
     }
@@ -115,21 +117,21 @@ public class ObfuscationHelper {
             ChattingUInonActivity = findClass(MM_UI_PACKAGENAME + "chatting.ChattingUI$a", lpparam.classLoader);
             Preference = findClass(MM_UI_PACKAGENAME + "base.preference.Preference", lpparam.classLoader);
             UserInfo = findClass(MM_MODEL_PACKAGENAME +
-                    new String[]{"v", "v", "g", "g", "g"}[idx], lpparam.classLoader);
+                    new String[]{"v", "v", "g", "g", "g","h"}[idx], lpparam.classLoader);
             UserNickName = findClass(MM_PLUGINSDK_UI_PACKNAME +
-                    new String[]{"d.i", "d.e", "d.e", "d.e", "d.e"}[idx], lpparam.classLoader);
+                    new String[]{"d.i", "d.e", "d.e", "d.e", "d.e","d.e"}[idx], lpparam.classLoader);
             Avatar = findClass(MM_PLUGINSDK_UI_PACKNAME +
-                    new String[]{"a$b", "a$b", "a$b", "a$b", "a$b"}[idx], lpparam.classLoader);
+                    new String[]{"a$b", "a$b", "a$b", "a$b", "a$b","a$b"}[idx], lpparam.classLoader);
             AccountStorage = findClass(MM_MODEL_PACKAGENAME +
-                    new String[]{"ax", "ax", "ag", "ag", "ah"}[idx], lpparam.classLoader);
+                    new String[]{"ax", "ax", "ag", "ag", "ah","ai"}[idx], lpparam.classLoader);
             NewFriendMessage = findClass("com.tencent.mm." +
-                    new String[]{"ag.m", "ag.m", "ah.l", "ah.l", "ai.l"}[idx], lpparam.classLoader);
+                    new String[]{"ag.m", "ag.m", "ah.l", "ah.l", "ai.l","am.l"}[idx], lpparam.classLoader);
             Bottle = findClass(MM_MODEL_PACKAGENAME +
-                    new String[]{"x", "x", "i", "i", "i"}[idx], lpparam.classLoader);
+                    new String[]{"x", "x", "i", "i", "i","j"}[idx], lpparam.classLoader);
             WTFClazz = findClass("com.tencent.mm.pluginsdk." +
-                    new String[]{"l$ag", "l$ag", "h$ah", "h$ah", "h$ah"}[idx], lpparam.classLoader);
+                    new String[]{"l$ag", "l$ag", "h$ah", "h$ah"}[idx], lpparam.classLoader);
             PluginToolClazz = findClass("com.tencent.mm." +
-                    new String[]{"aj.c", "aj.c", "am.c", "am.c", "an.c"}[idx], lpparam.classLoader);
+                    new String[]{"aj.c", "aj.c", "am.c", "am.c", "an.c","ao.c"}[idx], lpparam.classLoader);
 //            MainAddContactFragment = findClass(mainAddContactFragment, lpparam.classLoader);
 //            MainMoreFragment = findClass(mainMoreFragment, lpparam.classLoader);
         }
